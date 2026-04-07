@@ -8,7 +8,6 @@ from torch_geometric.transforms import ToDevice, Compose
 
 from newtonnet.models import NewtonNet
 from newtonnet.train import Trainer
-from newtonnet.data import RadiusGraph
 from newtonnet.data import parse_train_test
 from newtonnet.layers.precision import get_precision_by_string
 from newtonnet.layers.scalers import set_scaler_by_string
@@ -25,6 +24,7 @@ parser.add_argument(
     '--config',
     type=str,
     help='The path to the Yaml configuration file.',
+    default="config.yml"
     )
 parser.add_argument(
     '-r',
@@ -83,6 +83,8 @@ else:
     model = NewtonNet(**settings['model'])
     model.to(device)
     model.to(precision)
+    model.load_state_dict(torch.load("newtonnet.pt"))
+    # torch.save(model.state_dict(), "newtonnet.pt")
 
 # fit scalers
 fit_scalers = settings['training'].pop('fit_scalers', {})

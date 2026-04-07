@@ -252,3 +252,7 @@ class NullAggregator(nn.Module):
 
     def forward(self, output, outputs):
         return output
+    
+class SumAggregator(nn.Module):
+    def __init__(self):
+        super().__init__()

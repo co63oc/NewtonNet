@@ -1,5 +1,5 @@
 general:
-  device: cpu    # device of the model; cpu or cuda
+  device: cuda    # device of the model; cpu or cuda
   output: md17_model    # output directory, the training will be saved in md17_model/training_n, where n is the number of the training
   precision: double    # precition of the model; double = float64, single = float= float32, or half = float16
   seed: 0    # random seed
@@ -12,7 +12,7 @@ data:
   val_size: null    # number of validation samples; if not provided, the validation data will be the entire validation dataset
   test_size: null    # number of test samples; if not provided, the test data will be the entire test dataset
   stats_size: null    # number of samples to calculate the mean and std of the training data; if not provided, the stats size will be the training size
-  train_batch_size: 10    # batch size for training
+  train_batch_size: 50    # batch size for training
   val_batch_size: 1000    # batch size for validation
   test_batch_size: 1000    # batch size for test
   force_reload: False    # re-process the data even if the data is already processed
@@ -57,7 +57,7 @@ training:
       patience: 15    # patience of the scheduler
       factor: 0.7    # reduction factor of the scheduler
       min_lr: 1.0e-5    # minimum learning rate
-  epochs: 1000    # number of maximum epochs
+  epochs: 5    # number of maximum epochs
   clip_grad: 1.0    # gradient clipping value; if not provided or 0.0, no gradient clipping
   checkpoint:    # config of the checkpoint
     check_val: 1    # number of epochs to validate the model

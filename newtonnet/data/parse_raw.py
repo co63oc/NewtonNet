@@ -57,28 +57,31 @@ def parse_train_test(
     else:
         raise ValueError('train_root must be provided')
     train_size = len(train_data) if train_size is None else train_size
-    train_data, left_data = random_split(train_data, [train_size, len(train_data) - train_size])
+    # train_data, left_data = random_split(train_data, [train_size, len(train_data) - train_size])
+    train_data, left_data = train_data[0:train_size], train_data[train_size:]
     if val_root is not None:
         val_data = MolecularDataset(root=val_root, **dataset_kwargs)
         print(f'load {len(val_data)} data from {val_root}')
     else:
         val_data = left_data
     val_size = len(val_data) if val_size is None else val_size
-    val_data, left_data = random_split(val_data, [val_size, len(val_data) - val_size])
+    # val_data, left_data = random_split(val_data, [val_size, len(val_data) - val_size])
+    val_data, left_data = val_data[0:val_size], val_data[val_size:]
     if test_root is not None:
         test_data = MolecularDataset(root=test_root, **dataset_kwargs)
         print(f'load {len(test_data)} data from {test_root}')
     else:
         test_data = left_data
     test_size = len(test_data) if test_size is None else test_size
-    test_data, left_data = random_split(test_data, [test_size, len(test_data) - test_size])
+    # test_data, left_data = random_split(test_data, [test_size, len(test_data) - test_size])
+    test_data, left_data = test_data[0:test_size], test_data[test_size:]
     print(f'data size (train, val, test): {len(train_data)}, {len(val_data)}, {len(test_data)}')
 
     # create data loader
-    train_gen = DataLoader(dataset=train_data, batch_size=train_batch_size, shuffle=True)
+    train_gen = DataLoader(dataset=train_data, batch_size=train_batch_size, shuffle=False)
     val_gen = DataLoader(dataset=val_data, batch_size=val_batch_size, shuffle=(len(val_data) > 0))
     test_gen = DataLoader(dataset=test_data, batch_size=test_batch_size, shuffle=(len(test_data) > 0))
-    stats_gen = DataLoader(dataset=train_data, batch_size=stats_size if stats_size is not None else len(train_data), shuffle=True)
+    stats_gen = DataLoader(dataset=train_data, batch_size=stats_size if stats_size is not None else len(train_data), shuffle=False)
     print(f'batch size (train, val, test): {train_batch_size}, {val_batch_size}, {test_batch_size}')
 
     # extract data stats

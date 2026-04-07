@@ -191,6 +191,7 @@ class Trainer(object):
 
             # training
             self.model.train()
+            print("epoch: " + str(epoch+1))
             train_log = self.run_one_epoch(self.train_generator, step=True)
             step += len(self.train_generator)
             log_one_epoch['step'] = step
@@ -298,13 +299,16 @@ class Trainer(object):
 
     def run_one_epoch(self, generator, step=False):
         log_one_epoch = {}
+        i = 0
         for batch in generator:
+            i = i+1
             if step:
                 self.optimizer.zero_grad()
             # preds = self.model(batch)
             batch = batch.to(self.device)
             preds = self.model(batch.z, batch.pos, batch.cell, batch.batch)
             main_loss = self.main_loss(preds, batch)
+            print("batch" + str(i), main_loss)
             eval_loss = self.eval_loss(preds, batch)
             if step:
                 main_loss.backward()

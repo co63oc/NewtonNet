@@ -1,0 +1,129 @@
+[2026/04/08 10:02:42] ppmat INFO: Logger saved to ./output/newtonnet/run.log[0m
+[2026/04/08 10:02:42] ppmat INFO: Set random seed to 42[0m
+W0408 10:02:42.041538 22782 gpu_resources.cc:116] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 13.0, Runtime API Version: 12.9
+[36m[2026/04/08 10:02:45] ppmat MESSAGE: No loader config is provided, use default config.[0m
+[36m[2026/04/08 10:02:45] ppmat MESSAGE: Default loader config: {'num_workers': 0, 'use_shared_memory': True, 'collate_fn': 'DefaultCollator'}[0m
+[2026/04/08 10:02:45] ppmat INFO: No validation dataset defined.[0m
+[36m[2026/04/08 10:02:47] ppmat MESSAGE: No loader config is provided, use default config.[0m
+[36m[2026/04/08 10:02:47] ppmat MESSAGE: Default loader config: {'num_workers': 0, 'use_shared_memory': True, 'collate_fn': 'DefaultCollator'}[0m
+[36m[2026/04/08 10:02:47] ppmat MESSAGE: Finish loading pretrained model from: configs/newtonnet/newtonnet.pdparams[0m
+W0408 10:02:49.186148 22782 dygraph_functions.cc:125844] Got different data type, run type promotion automatically, this may cause data type been changed.
+[2026/04/08 10:02:49] ppmat INFO: Using paddlepaddle 3.4.0.dev20260324[0m
+[33m[2026/04/08 10:02:49] ppmat WARNING: No validation dataset provided, evaluation during training will be skipped.[0m
+[2026/04/08 10:02:49] ppmat INFO: Training start...[0m
+[2026/04/08 10:02:49] ppmat INFO: Number of trainable parameters: 0.43M[0m
+W0408 10:02:49.541838 22782 tensor.cc:111] The function of resetting the shape of the uninitialized Tensor of the `reshape` method is deprecated since version 2.3, and will be removed in version 2.4, please use `paddle::empty/full` method to create a new Tensor instead. reason: `reshape` means changing the tensor shape without touching underlying data, this requires the total size of the tensor to remain constant.
+W0408 10:02:56.526628 22782 dygraph_functions.cc:124144] Got different data type, run type promotion automatically, this may cause data type been changed.
+[2026/04/08 10:03:32] ppmat INFO: Train: Epoch [1/5] | Step: [1/19] | lr: 0.001000 | reader_cost: 0.004203 | batch_cost: 43.788333 | loss(loss): 192.621445[0m
+[2026/04/08 10:03:56] ppmat INFO: Train: Epoch [1/5] | Step: [2/19] | lr: 0.001000 | reader_cost: 0.000233 | batch_cost: 23.243943 | loss(loss): 424.982304[0m
+[2026/04/08 10:04:20] ppmat INFO: Train: Epoch [1/5] | Step: [3/19] | lr: 0.001000 | reader_cost: 0.000396 | batch_cost: 24.013422 | loss(loss): 144.322355[0m
+[2026/04/08 10:04:25] ppmat INFO: Train: Epoch [1/5] | Step: [4/19] | lr: 0.001000 | reader_cost: 0.000195 | batch_cost: 5.515063 | loss(loss): 83.619495[0m
+[2026/04/08 10:04:32] ppmat INFO: Train: Epoch [1/5] | Step: [5/19] | lr: 0.001000 | reader_cost: 0.000119 | batch_cost: 7.087288 | loss(loss): 94.493317[0m
+[2026/04/08 10:04:39] ppmat INFO: Train: Epoch [1/5] | Step: [6/19] | lr: 0.001000 | reader_cost: 0.000158 | batch_cost: 7.095336 | loss(loss): 70.849849[0m
+[2026/04/08 10:04:43] ppmat INFO: Train: Epoch [1/5] | Step: [7/19] | lr: 0.001000 | reader_cost: 0.000161 | batch_cost: 3.893616 | loss(loss): 85.222915[0m
+[2026/04/08 10:04:50] ppmat INFO: Train: Epoch [1/5] | Step: [8/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 6.687651 | loss(loss): 89.734798[0m
+[2026/04/08 10:04:57] ppmat INFO: Train: Epoch [1/5] | Step: [9/19] | lr: 0.001000 | reader_cost: 0.000165 | batch_cost: 6.540001 | loss(loss): 61.853820[0m
+[2026/04/08 10:05:01] ppmat INFO: Train: Epoch [1/5] | Step: [10/19] | lr: 0.001000 | reader_cost: 0.000197 | batch_cost: 4.482497 | loss(loss): 76.604454[0m
+[2026/04/08 10:05:08] ppmat INFO: Train: Epoch [1/5] | Step: [11/19] | lr: 0.001000 | reader_cost: 0.000130 | batch_cost: 7.024982 | loss(loss): 82.925811[0m
+[2026/04/08 10:05:15] ppmat INFO: Train: Epoch [1/5] | Step: [12/19] | lr: 0.001000 | reader_cost: 0.000149 | batch_cost: 7.164232 | loss(loss): 67.054130[0m
+[2026/04/08 10:05:20] ppmat INFO: Train: Epoch [1/5] | Step: [13/19] | lr: 0.001000 | reader_cost: 0.000193 | batch_cost: 4.368698 | loss(loss): 65.471889[0m
+[2026/04/08 10:05:27] ppmat INFO: Train: Epoch [1/5] | Step: [14/19] | lr: 0.001000 | reader_cost: 0.000197 | batch_cost: 7.213683 | loss(loss): 46.090594[0m
+[2026/04/08 10:05:31] ppmat INFO: Train: Epoch [1/5] | Step: [15/19] | lr: 0.001000 | reader_cost: 0.000132 | batch_cost: 4.136958 | loss(loss): 55.115242[0m
+[2026/04/08 10:05:39] ppmat INFO: Train: Epoch [1/5] | Step: [16/19] | lr: 0.001000 | reader_cost: 0.000133 | batch_cost: 7.820131 | loss(loss): 61.989567[0m
+[2026/04/08 10:05:47] ppmat INFO: Train: Epoch [1/5] | Step: [17/19] | lr: 0.001000 | reader_cost: 0.000265 | batch_cost: 7.731982 | loss(loss): 58.035214[0m
+[2026/04/08 10:05:51] ppmat INFO: Train: Epoch [1/5] | Step: [18/19] | lr: 0.001000 | reader_cost: 0.000154 | batch_cost: 4.614645 | loss(loss): 52.891801[0m
+[2026/04/08 10:05:58] ppmat INFO: Train: Epoch [1/5] | Step: [19/19] | lr: 0.001000 | reader_cost: 0.000129 | batch_cost: 7.319438 | loss(loss): 62.082631[0m
+[2026/04/08 10:05:58] ppmat INFO: Train: Epoch [1/5] | reader_cost: 0.000392 | batch_cost: 9.986416 | loss(loss): 98.734823[0m
+[36m[2026/04/08 10:05:59] ppmat MESSAGE: Finish saving checkpoint to: ./output/newtonnet/checkpoints/epoch_1[0m
+[36m[2026/04/08 10:05:59] ppmat MESSAGE: Finish saving checkpoint to: ./output/newtonnet/checkpoints/latest(latest checkpoint will be saved every epoch as expected, but this log will be printed only once for tidy logging)[0m
+[33m[2026/04/08 10:05:59] ppmat WARNING: No eval_loss info found, skip saving best model.[0m
+[2026/04/08 10:06:06] ppmat INFO: Train: Epoch [2/5] | Step: [1/19] | lr: 0.001000 | reader_cost: 0.002245 | batch_cost: 7.288456 | loss(loss): 60.911827[0m
+[2026/04/08 10:06:10] ppmat INFO: Train: Epoch [2/5] | Step: [2/19] | lr: 0.001000 | reader_cost: 0.000133 | batch_cost: 4.403644 | loss(loss): 53.353855[0m
+[2026/04/08 10:06:18] ppmat INFO: Train: Epoch [2/5] | Step: [3/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 7.128698 | loss(loss): 52.745534[0m
+[2026/04/08 10:06:25] ppmat INFO: Train: Epoch [2/5] | Step: [4/19] | lr: 0.001000 | reader_cost: 0.000136 | batch_cost: 6.992677 | loss(loss): 52.954486[0m
+[2026/04/08 10:06:29] ppmat INFO: Train: Epoch [2/5] | Step: [5/19] | lr: 0.001000 | reader_cost: 0.000202 | batch_cost: 4.285973 | loss(loss): 52.906475[0m
+[2026/04/08 10:06:36] ppmat INFO: Train: Epoch [2/5] | Step: [6/19] | lr: 0.001000 | reader_cost: 0.000123 | batch_cost: 6.996616 | loss(loss): 47.258759[0m
+[2026/04/08 10:06:40] ppmat INFO: Train: Epoch [2/5] | Step: [7/19] | lr: 0.001000 | reader_cost: 0.000202 | batch_cost: 4.432798 | loss(loss): 46.337743[0m
+[2026/04/08 10:06:48] ppmat INFO: Train: Epoch [2/5] | Step: [8/19] | lr: 0.001000 | reader_cost: 0.000194 | batch_cost: 7.444044 | loss(loss): 36.698154[0m
+[2026/04/08 10:06:52] ppmat INFO: Train: Epoch [2/5] | Step: [9/19] | lr: 0.001000 | reader_cost: 0.000407 | batch_cost: 4.529482 | loss(loss): 38.157028[0m
+[2026/04/08 10:07:00] ppmat INFO: Train: Epoch [2/5] | Step: [10/19] | lr: 0.001000 | reader_cost: 0.000220 | batch_cost: 7.354657 | loss(loss): 39.609850[0m
+[2026/04/08 10:07:04] ppmat INFO: Train: Epoch [2/5] | Step: [11/19] | lr: 0.001000 | reader_cost: 0.000131 | batch_cost: 4.815421 | loss(loss): 48.415909[0m
+[2026/04/08 10:07:12] ppmat INFO: Train: Epoch [2/5] | Step: [12/19] | lr: 0.001000 | reader_cost: 0.000249 | batch_cost: 8.047662 | loss(loss): 43.741420[0m
+[2026/04/08 10:07:17] ppmat INFO: Train: Epoch [2/5] | Step: [13/19] | lr: 0.001000 | reader_cost: 0.000158 | batch_cost: 4.719668 | loss(loss): 38.104196[0m
+[2026/04/08 10:07:25] ppmat INFO: Train: Epoch [2/5] | Step: [14/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 7.566029 | loss(loss): 41.483651[0m
+[2026/04/08 10:07:30] ppmat INFO: Train: Epoch [2/5] | Step: [15/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 4.812305 | loss(loss): 40.918344[0m
+[2026/04/08 10:07:37] ppmat INFO: Train: Epoch [2/5] | Step: [16/19] | lr: 0.001000 | reader_cost: 0.000164 | batch_cost: 7.384202 | loss(loss): 34.685635[0m
+[2026/04/08 10:07:45] ppmat INFO: Train: Epoch [2/5] | Step: [17/19] | lr: 0.001000 | reader_cost: 0.000152 | batch_cost: 7.996556 | loss(loss): 44.907362[0m
+[2026/04/08 10:07:50] ppmat INFO: Train: Epoch [2/5] | Step: [18/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 5.235708 | loss(loss): 52.814710[0m
+[2026/04/08 10:07:58] ppmat INFO: Train: Epoch [2/5] | Step: [19/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 7.812943 | loss(loss): 38.030187[0m
+[2026/04/08 10:07:58] ppmat INFO: Train: Epoch [2/5] | reader_cost: 0.000285 | batch_cost: 6.276186 | loss(loss): 45.475533[0m
+[33m[2026/04/08 10:07:58] ppmat WARNING: No eval_loss info found, skip saving best model.[0m
+[2026/04/08 10:08:03] ppmat INFO: Train: Epoch [3/5] | Step: [1/19] | lr: 0.001000 | reader_cost: 0.003455 | batch_cost: 4.896094 | loss(loss): 29.659239[0m
+[2026/04/08 10:08:10] ppmat INFO: Train: Epoch [3/5] | Step: [2/19] | lr: 0.001000 | reader_cost: 0.000160 | batch_cost: 7.357712 | loss(loss): 35.392004[0m
+[2026/04/08 10:08:15] ppmat INFO: Train: Epoch [3/5] | Step: [3/19] | lr: 0.001000 | reader_cost: 0.000119 | batch_cost: 4.408237 | loss(loss): 28.394467[0m
+[2026/04/08 10:08:22] ppmat INFO: Train: Epoch [3/5] | Step: [4/19] | lr: 0.001000 | reader_cost: 0.000211 | batch_cost: 7.155079 | loss(loss): 25.302662[0m
+[2026/04/08 10:08:29] ppmat INFO: Train: Epoch [3/5] | Step: [5/19] | lr: 0.001000 | reader_cost: 0.000147 | batch_cost: 7.105344 | loss(loss): 27.102394[0m
+[2026/04/08 10:08:33] ppmat INFO: Train: Epoch [3/5] | Step: [6/19] | lr: 0.001000 | reader_cost: 0.000144 | batch_cost: 4.321336 | loss(loss): 21.623109[0m
+[2026/04/08 10:08:41] ppmat INFO: Train: Epoch [3/5] | Step: [7/19] | lr: 0.001000 | reader_cost: 0.000140 | batch_cost: 7.194944 | loss(loss): 22.746819[0m
+[2026/04/08 10:08:45] ppmat INFO: Train: Epoch [3/5] | Step: [8/19] | lr: 0.001000 | reader_cost: 0.000140 | batch_cost: 4.467572 | loss(loss): 25.807162[0m
+[2026/04/08 10:08:52] ppmat INFO: Train: Epoch [3/5] | Step: [9/19] | lr: 0.001000 | reader_cost: 0.000163 | batch_cost: 7.333077 | loss(loss): 24.164470[0m
+[2026/04/08 10:08:57] ppmat INFO: Train: Epoch [3/5] | Step: [10/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 4.299570 | loss(loss): 24.713466[0m
+[2026/04/08 10:09:04] ppmat INFO: Train: Epoch [3/5] | Step: [11/19] | lr: 0.001000 | reader_cost: 0.000180 | batch_cost: 7.274296 | loss(loss): 26.408953[0m
+[2026/04/08 10:09:11] ppmat INFO: Train: Epoch [3/5] | Step: [12/19] | lr: 0.001000 | reader_cost: 0.000157 | batch_cost: 7.360194 | loss(loss): 20.347471[0m
+[2026/04/08 10:09:16] ppmat INFO: Train: Epoch [3/5] | Step: [13/19] | lr: 0.001000 | reader_cost: 0.000121 | batch_cost: 4.310038 | loss(loss): 21.138892[0m
+[2026/04/08 10:09:23] ppmat INFO: Train: Epoch [3/5] | Step: [14/19] | lr: 0.001000 | reader_cost: 0.000191 | batch_cost: 7.095745 | loss(loss): 24.346221[0m
+[2026/04/08 10:09:27] ppmat INFO: Train: Epoch [3/5] | Step: [15/19] | lr: 0.001000 | reader_cost: 0.000203 | batch_cost: 4.305178 | loss(loss): 23.046768[0m
+[2026/04/08 10:09:34] ppmat INFO: Train: Epoch [3/5] | Step: [16/19] | lr: 0.001000 | reader_cost: 0.000131 | batch_cost: 7.016903 | loss(loss): 17.649465[0m
+[2026/04/08 10:09:38] ppmat INFO: Train: Epoch [3/5] | Step: [17/19] | lr: 0.001000 | reader_cost: 0.000141 | batch_cost: 4.351572 | loss(loss): 20.752041[0m
+[2026/04/08 10:09:45] ppmat INFO: Train: Epoch [3/5] | Step: [18/19] | lr: 0.001000 | reader_cost: 0.000119 | batch_cost: 7.102421 | loss(loss): 24.596122[0m
+[2026/04/08 10:09:50] ppmat INFO: Train: Epoch [3/5] | Step: [19/19] | lr: 0.001000 | reader_cost: 0.000149 | batch_cost: 4.738315 | loss(loss): 20.835941[0m
+[2026/04/08 10:09:50] ppmat INFO: Train: Epoch [3/5] | reader_cost: 0.000327 | batch_cost: 5.899665 | loss(loss): 24.422509[0m
+[33m[2026/04/08 10:09:53] ppmat WARNING: No eval_loss info found, skip saving best model.[0m
+[2026/04/08 10:09:58] ppmat INFO: Train: Epoch [4/5] | Step: [1/19] | lr: 0.001000 | reader_cost: 0.002265 | batch_cost: 4.492069 | loss(loss): 19.150545[0m
+[2026/04/08 10:10:06] ppmat INFO: Train: Epoch [4/5] | Step: [2/19] | lr: 0.001000 | reader_cost: 0.000145 | batch_cost: 8.218807 | loss(loss): 18.662536[0m
+[2026/04/08 10:10:10] ppmat INFO: Train: Epoch [4/5] | Step: [3/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 4.410590 | loss(loss): 18.614137[0m
+[2026/04/08 10:10:18] ppmat INFO: Train: Epoch [4/5] | Step: [4/19] | lr: 0.001000 | reader_cost: 0.000117 | batch_cost: 7.197993 | loss(loss): 17.828987[0m
+[2026/04/08 10:10:22] ppmat INFO: Train: Epoch [4/5] | Step: [5/19] | lr: 0.001000 | reader_cost: 0.000133 | batch_cost: 4.492115 | loss(loss): 18.125264[0m
+[2026/04/08 10:10:30] ppmat INFO: Train: Epoch [4/5] | Step: [6/19] | lr: 0.001000 | reader_cost: 0.000199 | batch_cost: 7.758711 | loss(loss): 17.362555[0m
+[2026/04/08 10:10:37] ppmat INFO: Train: Epoch [4/5] | Step: [7/19] | lr: 0.001000 | reader_cost: 0.000168 | batch_cost: 7.591744 | loss(loss): 17.675392[0m
+[2026/04/08 10:10:42] ppmat INFO: Train: Epoch [4/5] | Step: [8/19] | lr: 0.001000 | reader_cost: 0.000122 | batch_cost: 4.312348 | loss(loss): 15.792876[0m
+[2026/04/08 10:10:46] ppmat INFO: Train: Epoch [4/5] | Step: [9/19] | lr: 0.001000 | reader_cost: 0.000117 | batch_cost: 4.301467 | loss(loss): 15.444761[0m
+[2026/04/08 10:10:53] ppmat INFO: Train: Epoch [4/5] | Step: [10/19] | lr: 0.001000 | reader_cost: 0.000147 | batch_cost: 7.145588 | loss(loss): 17.531660[0m
+[2026/04/08 10:11:00] ppmat INFO: Train: Epoch [4/5] | Step: [11/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 7.012929 | loss(loss): 14.194249[0m
+[2026/04/08 10:11:05] ppmat INFO: Train: Epoch [4/5] | Step: [12/19] | lr: 0.001000 | reader_cost: 0.000159 | batch_cost: 4.345401 | loss(loss): 14.700882[0m
+[2026/04/08 10:11:12] ppmat INFO: Train: Epoch [4/5] | Step: [13/19] | lr: 0.001000 | reader_cost: 0.000118 | batch_cost: 7.083089 | loss(loss): 16.913875[0m
+[2026/04/08 10:11:16] ppmat INFO: Train: Epoch [4/5] | Step: [14/19] | lr: 0.001000 | reader_cost: 0.000156 | batch_cost: 4.508705 | loss(loss): 16.077850[0m
+[2026/04/08 10:11:23] ppmat INFO: Train: Epoch [4/5] | Step: [15/19] | lr: 0.001000 | reader_cost: 0.000131 | batch_cost: 7.047346 | loss(loss): 12.794892[0m
+[2026/04/08 10:11:27] ppmat INFO: Train: Epoch [4/5] | Step: [16/19] | lr: 0.001000 | reader_cost: 0.000133 | batch_cost: 4.309198 | loss(loss): 15.436695[0m
+[2026/04/08 10:11:35] ppmat INFO: Train: Epoch [4/5] | Step: [17/19] | lr: 0.001000 | reader_cost: 0.000134 | batch_cost: 7.044561 | loss(loss): 15.262799[0m
+[2026/04/08 10:11:39] ppmat INFO: Train: Epoch [4/5] | Step: [18/19] | lr: 0.001000 | reader_cost: 0.000143 | batch_cost: 4.100302 | loss(loss): 12.549254[0m
+[2026/04/08 10:11:46] ppmat INFO: Train: Epoch [4/5] | Step: [19/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 6.898581 | loss(loss): 15.014843[0m
+[2026/04/08 10:11:46] ppmat INFO: Train: Epoch [4/5] | reader_cost: 0.000253 | batch_cost: 5.909029 | loss(loss): 16.270213[0m
+[33m[2026/04/08 10:11:46] ppmat WARNING: No eval_loss info found, skip saving best model.[0m
+[2026/04/08 10:11:52] ppmat INFO: Train: Epoch [5/5] | Step: [1/19] | lr: 0.001000 | reader_cost: 0.002527 | batch_cost: 6.796276 | loss(loss): 15.778065[0m
+[2026/04/08 10:11:56] ppmat INFO: Train: Epoch [5/5] | Step: [2/19] | lr: 0.001000 | reader_cost: 0.000142 | batch_cost: 4.069517 | loss(loss): 12.370577[0m
+[2026/04/08 10:12:04] ppmat INFO: Train: Epoch [5/5] | Step: [3/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 7.288450 | loss(loss): 12.959286[0m
+[2026/04/08 10:12:09] ppmat INFO: Train: Epoch [5/5] | Step: [4/19] | lr: 0.001000 | reader_cost: 0.000135 | batch_cost: 4.778574 | loss(loss): 14.186642[0m
+[2026/04/08 10:12:17] ppmat INFO: Train: Epoch [5/5] | Step: [5/19] | lr: 0.001000 | reader_cost: 0.000174 | batch_cost: 8.243345 | loss(loss): 12.146045[0m
+[2026/04/08 10:12:21] ppmat INFO: Train: Epoch [5/5] | Step: [6/19] | lr: 0.001000 | reader_cost: 0.000160 | batch_cost: 4.357676 | loss(loss): 11.253120[0m
+[2026/04/08 10:12:29] ppmat INFO: Train: Epoch [5/5] | Step: [7/19] | lr: 0.001000 | reader_cost: 0.000121 | batch_cost: 7.375726 | loss(loss): 11.414697[0m
+[2026/04/08 10:12:33] ppmat INFO: Train: Epoch [5/5] | Step: [8/19] | lr: 0.001000 | reader_cost: 0.000156 | batch_cost: 4.187866 | loss(loss): 11.759908[0m
+[2026/04/08 10:12:40] ppmat INFO: Train: Epoch [5/5] | Step: [9/19] | lr: 0.001000 | reader_cost: 0.000161 | batch_cost: 7.643305 | loss(loss): 10.218335[0m
+[2026/04/08 10:12:45] ppmat INFO: Train: Epoch [5/5] | Step: [10/19] | lr: 0.001000 | reader_cost: 0.000127 | batch_cost: 4.610539 | loss(loss): 12.486316[0m
+[2026/04/08 10:12:52] ppmat INFO: Train: Epoch [5/5] | Step: [11/19] | lr: 0.001000 | reader_cost: 0.000123 | batch_cost: 7.446409 | loss(loss): 12.022749[0m
+[2026/04/08 10:13:00] ppmat INFO: Train: Epoch [5/5] | Step: [12/19] | lr: 0.001000 | reader_cost: 0.000132 | batch_cost: 7.877740 | loss(loss): 11.227779[0m
+[2026/04/08 10:13:05] ppmat INFO: Train: Epoch [5/5] | Step: [13/19] | lr: 0.001000 | reader_cost: 0.000133 | batch_cost: 4.538367 | loss(loss): 11.029288[0m
+[2026/04/08 10:13:13] ppmat INFO: Train: Epoch [5/5] | Step: [14/19] | lr: 0.001000 | reader_cost: 0.000174 | batch_cost: 7.784502 | loss(loss): 10.144719[0m
+[2026/04/08 10:13:17] ppmat INFO: Train: Epoch [5/5] | Step: [15/19] | lr: 0.001000 | reader_cost: 0.000169 | batch_cost: 4.647240 | loss(loss): 10.611486[0m
+[2026/04/08 10:13:25] ppmat INFO: Train: Epoch [5/5] | Step: [16/19] | lr: 0.001000 | reader_cost: 0.000119 | batch_cost: 7.507077 | loss(loss): 8.716515[0m
+[2026/04/08 10:13:29] ppmat INFO: Train: Epoch [5/5] | Step: [17/19] | lr: 0.001000 | reader_cost: 0.000153 | batch_cost: 4.586477 | loss(loss): 11.415478[0m
+[2026/04/08 10:13:37] ppmat INFO: Train: Epoch [5/5] | Step: [18/19] | lr: 0.001000 | reader_cost: 0.000199 | batch_cost: 7.153912 | loss(loss): 11.121763[0m
+[2026/04/08 10:13:41] ppmat INFO: Train: Epoch [5/5] | Step: [19/19] | lr: 0.001000 | reader_cost: 0.000199 | batch_cost: 4.350939 | loss(loss): 12.943769[0m
+[2026/04/08 10:13:41] ppmat INFO: Train: Epoch [5/5] | reader_cost: 0.000276 | batch_cost: 6.065470 | loss(loss): 11.779291[0m
+[36m[2026/04/08 10:13:41] ppmat MESSAGE: Finish saving checkpoint to: ./output/newtonnet/checkpoints/epoch_5[0m
+[33m[2026/04/08 10:13:44] ppmat WARNING: No eval_loss info found, skip saving best model.[0m
+[2026/04/08 10:13:44] ppmat INFO: Evaluating on test set[0m
+[2026/04/08 10:13:44] ppmat INFO: Start evaluating...[0m
+[2026/04/08 10:13:44] ppmat INFO: Number of samples in evaluation dataset: 500[0m
+[2026/04/08 10:17:35] ppmat INFO: Eval: Epoch [0/5] | Step: [1/1] | reader_cost: 0.063610 | batch_cost: 231.297427 | loss(loss): 15.629954[0m
+[2026/04/08 10:17:35] ppmat INFO: Eval: | reader_cost: 0.063610 | batch_cost: 231.297427 | loss(loss): 15.629954[0m
